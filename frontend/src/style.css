@@ -1,0 +1,91 @@
+:root {
+  --background: #23272f;
+  --surface: #2d323c;
+  --surface-alt: #353b47;
+  --text: #f3f3f7;
+  --accent: #8ecae6;
+  --primary: #219ebc;
+  --danger: #e63946;
+  --border: #444a57;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-alt);
+  border-radius: 8px;
+}
+
+/* Card style for chic look */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 0.5em;
+}
+.button.danger {
+  background: var(--danger);
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input, select {
+  background: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  outline: none;
+}
+input:focus, select:focus {
+  border-color: var(--accent);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Utility */
+.flex {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+I have changed the frontend's Days Table ka Coulmn name from Place to Activty 
+but in the backend it might go as place only. Need to replace every instance of Place with 
+activity
+
