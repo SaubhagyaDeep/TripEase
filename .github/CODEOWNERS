@@ -1,0 +1,3 @@
+# Allowlist and scan config need security review. In the org, use the team handle (e.g. @momentum/security).
+/.github/trufflehog/  @SaubhagyaDeep
+/.github/workflows/trufflehog.yml  @SaubhagyaDeep
