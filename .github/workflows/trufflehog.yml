@@ -1,0 +1,20 @@
+name: TruffleHog
+
+on:
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 1,15 * *'   # 1st and 15th, full history
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  trufflehog:
+    uses: SaubhagyaDeep/security-workflows/.github/workflows/trufflehog.yml@8ac8eb821c465cba34caf214d059e8884b93e827
+    with:
+      scan: ${{ github.event_name == 'pull_request' && 'pr' || 'full' }}
+      mode: report   # set to block to fail PRs on verified secrets
+    secrets: inherit
