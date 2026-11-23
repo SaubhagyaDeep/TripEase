@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   trufflehog:
-    uses: SaubhagyaDeep/security-workflows/.github/workflows/trufflehog.yml@8ac8eb821c465cba34caf214d059e8884b93e827
+    uses: SaubhagyaDeep/Checkov-testing-2/.github/workflows/trufflehog.yml@4736e877d79e6fbe0a2fe38e97cd0148964d0633
     with:
       scan: ${{ github.event_name == 'pull_request' && 'pr' || 'full' }}
       mode: report   # set to block to fail PRs on verified secrets
