@@ -1,3 +1,4 @@
-# Exceptions need reason, expires (<=180 days out) and approved-by. PR scans read this file from
-# the base branch, so an entry only takes effect after it is merged.
+# Exceptions need reason, expires (<=180 days out) and approved-by.
+# Entries apply in the same PR that adds them; every suppressed finding is listed in the PR comment.
+# CODEOWNERS requires security review of this file (enable "Require review from Code Owners" on main).
 allowlist: []
