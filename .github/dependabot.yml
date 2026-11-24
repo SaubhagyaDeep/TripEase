@@ -1,8 +1,6 @@
 version: 2
 updates:
-  # TESTING cadence (10-minute cron). Switch back to `interval: weekly` after verifying.
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: cron
-      cronjob: "*/10 * * * *"
+      interval: weekly
