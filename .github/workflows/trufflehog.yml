@@ -18,4 +18,5 @@ jobs:
       scan: ${{ github.event_name == 'pull_request' && 'pr' || 'full' }}
       results: verified,unverified   # per-repo toggle; use `verified` for low noise
       mode: block                   # report (never fails) | block (fails on ANY finding)
+      show-secret: redacted          # none (default) | redacted: adds a partial-value Hint column
     secrets: inherit
