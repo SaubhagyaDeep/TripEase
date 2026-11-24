@@ -1,0 +1,7 @@
+version: 2
+updates:
+  # Opens PRs when the shared TruffleHog workflow (SHA-pinned) has a new release.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

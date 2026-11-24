@@ -1,4 +1,4 @@
-# Exceptions need reason, expires (<=180 days out) and approved-by.
+# Exceptions need reason, expires (a date <=180 days out, or `never`) and approved-by.
 # Entries apply in the same PR that adds them; every suppressed finding is listed in the PR comment.
 # CODEOWNERS requires security review of this file (enable "Require review from Code Owners" on main).
 allowlist: []
