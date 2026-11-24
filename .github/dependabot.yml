@@ -1,7 +1,8 @@
 version: 2
 updates:
-  # Opens PRs when the shared TruffleHog workflow (SHA-pinned) has a new release.
+  # TESTING cadence (hourly cron). Switch back to `interval: weekly` after verifying.
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: cron
+      cronjob: "0 * * * *"
