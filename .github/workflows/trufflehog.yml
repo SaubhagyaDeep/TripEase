@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   trufflehog:
-    uses: SaubhagyaDeep/Checkov-testing/.github/workflows/trufflehog.yml@cdb3507edb0402aad2effe1c3cc520ed3c433c73 # v1.0.0
+    uses: SaubhagyaDeep/Checkov-testing/.github/workflows/trufflehog.yml@11b748b33b551148110073bc7a480b781991ad2a # v1.0.4
     with:
       scan: ${{ github.event_name == 'pull_request' && 'pr' || 'full' }}
       results: verified,unverified   # per-repo toggle; use `verified` for low noise
